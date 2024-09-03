@@ -1,0 +1,46 @@
+npm init
+
+
+src
+   settings
+   controllers
+   daos
+   middleware
+   models
+   repositories
+   routes
+index.ts
+
+
+npm i cors -> Bloqueo de datos
+npm i morgan -> salida de datos
+npm i express -> Motor de desarrollo
+npm i jsonwebtoken -> seguridad
+npm i pg-promise -> Conexion con Postgres
+
+
+
+npm i @types/cors --save-dev                   
+npm i @types/morgan --save-dev
+npm i @types/express --save-dev
+npm i @types/jsonwebtoken --save-dev
+npm i nodemon --save-dev
+
+
+
+!!!!!!SCRIPTS!!!!!!!
+"dev": "nodemon build/index.js"
+"build": "tsc -w"
+
+tsc --init 
+
+
+
+
+
+
+
+
+
+
+npm uninstall thepack
