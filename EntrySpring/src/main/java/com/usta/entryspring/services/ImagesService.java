@@ -1,0 +1,32 @@
+package com.usta.entryspring.services;
+
+import com.usta.entryspring.models.ImagesModel;
+import com.usta.entryspring.repositories.ImagesRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class ImagesService {
+
+    @Autowired
+    private ImagesRepository imagesRepository;
+
+    public List<ImagesModel> listImages(){
+        return imagesRepository.findAll();
+    }
+    public ImagesModel createImage(ImagesModel images){
+        return imagesRepository.save(images);
+    }
+    public ImagesModel editImage(ImagesModel images){
+        return imagesRepository.save(images);
+    }
+    public Optional<ImagesModel> findImage(Long id){
+        return imagesRepository.findById(id);
+    }
+    public void deleteImage(Long id){
+        imagesRepository.deleteById(id);
+    }
+}
